@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financing Trust Block + Schema Sample &middot; West Coast Plastic Surgery &middot; AG Consulting</title>
+<meta name="description" content="Financing trust block (homepage hero mockup + procedure-page financing) and deployable JSON-LD schema sample for West Coast Plastic Surgery. Prepared by AG Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Financing Trust Block + Schema &middot; West Coast Plastic Surgery">
+<meta property="og:description" content="The homepage hero mockup, the procedure-page financing block, and the deployable JSON-LD schema sample, all in one document.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="hub-page.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Dr. Lambiris &middot; AG Consulting</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Funnel + Schema</span>
+    <h1>Financing Trust Block + <em>Schema Sample</em></h1>
+  </header>
+
+<h2>Part 1 &middot; Financing trust block</h2>
+
+<h3>What the audit found</h3>
+<p>The current homepage does not name a single financing partner above the fold or in the hero. The nav contains a generic "Financing" link. No CareCredit logo. No PatientFi. No Cherry. No Alphaeon. No Prosper Healthcare Lending. No payment calculator. No "from $X/month" anchor next to procedure pricing.</p>
+<p>For a practice whose primary procedures price between <strong>$6,000 and $17,000</strong>, the absence of explicit financing reassurance above the fold is a measurable conversion leak.</p>
+
+<h3>Why this matters more for cosmetic surgery than for most verticals</h3>
+<p>Three documented patterns in cosmetic surgery patient behaviour:</p>
+<ol>
+<li><strong>The price-shock moment.</strong> A patient lands on a procedure page. They scan to find the price. They see "$8,500 to $12,000." If the next thing their eye finds is not "as low as $189/month with CareCredit," the next thing their eye finds is the back button.</li>
+<li><strong>The pre-consult drop-off.</strong> Even patients who fill out the consultation form often cancel before the consult, because they have spent the intervening days convinced the procedure is unaffordable. Visible financing <strong>before</strong> the form converts the same patient at the same price.</li>
+<li><strong>The trust-partner effect.</strong> CareCredit and PatientFi are names patients already recognise from their dentist, their dermatologist, their veterinarian. Seeing those logos on a plastic surgery site is a soft credentialing signal: "this is a real practice operating inside the normal medical-financing ecosystem."</li>
+</ol>
+
+<hr />
+
+<h2>The proposed homepage hero mockup</h2>
+
+<h3>Current hero (ASCII wireframe of what is there now)</h3>
+<pre><code>+------------------------------------------------------------+
+|  [LOGO]        Procedures   Med Spa   About   Gallery      |
+|                                       Financing   Contact  |
++------------------------------------------------------------+
+|                                                            |
+|         [HERO IMAGE, Dr. Lambiris or practice]             |
+|                                                            |
+|            West Coast Plastic Surgery                      |
+|            Sarasota plastic surgeon                        |
+|                                                            |
+|            [ Schedule Consultation ]                       |
+|                                                            |
++------------------------------------------------------------+
+</code></pre>
+<p>What is missing in one glance: ABPS credential, financing partners, the Marsh-inheritance hook, social proof.</p>
+
+<h3>Proposed hero</h3>
+<pre><code>+--------------------------------------------------------------------+
+|  [LOGO]       Procedures   Med Spa   About   Gallery   Financing   |
+|                                                       Contact      |
++--------------------------------------------------------------------+
+|  ABPS BOARD-CERTIFIED · SRQ TOP DOCTORS 2024 · 5.0 GOOGLE          |
++--------------------------------------------------------------------+
+|                                                                    |
+|       The Sarasota plastic surgery practice                        |
+|       built by Dr. James Marsh.                                    |
+|       Now led by Dr. Brandon Lambiris, MD.                         |
+|                                                                    |
+|       [ Schedule Your Consultation ]   [ See Before &amp; Afters ]     |
+|                                                                    |
+|       FINANCING AVAILABLE FROM TRUSTED PARTNERS:                   |
+|       [CareCredit] [PatientFi] [Cherry] [Alphaeon Credit]          |
+|       Procedures from as low as $189/month*                        |
+|                                                                    |
++--------------------------------------------------------------------+
+|       *Subject to credit approval. Actual rate and payment         |
+|        depend on procedure cost, term, and applicant profile.      |
++--------------------------------------------------------------------+
+</code></pre>
+
+<h3>Why each element of the hero earns its place</h3>
+<table>
+<thead><tr><th>Element</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>Trust strip (ABPS, SRQ, 5.0 stars)</td><td>Surfaces credentials in one second. Reframes the page from "another plastic surgery site" to "credentialled practice."</td></tr>
+<tr><td>Marsh-inheritance hook in H1</td><td>The single uncopyable moat. No competitor in Sarasota can say this.</td></tr>
+<tr><td>Primary CTA (Schedule Consultation)</td><td>Unchanged. Existing flow continues to convert as it does today.</td></tr>
+<tr><td>Secondary CTA (See Before &amp; Afters)</td><td>Captures the comparison-shopping segment who is not ready to consult but will browse photos for 8+ minutes if given a clear path.</td></tr>
+<tr><td>Financing partner logos</td><td>Removes the price-shock objection before the patient ever sees a price.</td></tr>
+<tr><td>"From as low as $189/month*"</td><td>Anchors affordability. $189/month is what a typical $6,000 procedure runs at CareCredit's 24-month 0% APR promo. The asterisk legal copy keeps it defensible.</td></tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2>Procedure-page financing block (proposed)</h2>
+<p>This block sits directly below the procedure price range on every procedure page (breast aug, mommy makeover, tummy tuck, facelift, etc.).</p>
+
+<pre><code>+--------------------------------------------------------------+
+|  Breast Augmentation Pricing                                 |
+|  Procedures typically range from $[X] to $[Y]                |
+|                                                              |
+|  Financing options:                                          |
+|  +----------+----------+----------+----------+               |
+|  | CareCred | PatientFi| Cherry   | Alphaeon |               |
+|  | [logo]   | [logo]   | [logo]   | [logo]   |               |
+|  +----------+----------+----------+----------+               |
+|                                                              |
+|  Estimated monthly payment calculator:                       |
+|  Procedure cost: [$8,500 v]                                  |
+|  Loan term:     [24 months v]                                |
+|  Estimated payment: $355/month*                              |
+|                                                              |
+|  [ Apply for Financing ]   [ Schedule Consultation ]         |
++--------------------------------------------------------------+
+</code></pre>
+<p>The calculator is a small JavaScript widget pulling published rate tables. No live credit-pull, no PII collection, no underwriting promise. Just an estimate.</p>
+
+<hr />
+
+<h2>Copy library for the financing section</h2>
+<p>Three sentence-length variants the practice can use in different contexts (hero, procedure pages, consultation form, post-consult email). All written to be ASPS Code of Ethics safe and FTC truth-in-advertising safe.</p>
+
+<h4>Variant 1 (homepage hero)</h4>
+<blockquote>Procedures available with financing from CareCredit, PatientFi, Cherry, and Alphaeon Credit. Payment plans from as low as $189/month with approved credit.</blockquote>
+
+<h4>Variant 2 (procedure page header)</h4>
+<blockquote>Most patients finance their procedure. We work with CareCredit, PatientFi, Cherry, and Alphaeon Credit so you can build a payment plan that fits your monthly budget. Apply in minutes, get a decision the same day.</blockquote>
+
+<h4>Variant 3 (post-consult follow-up email)</h4>
+<blockquote>Worth knowing as you decide: the procedures we discussed today are eligible for financing through CareCredit, PatientFi, Cherry, or Alphaeon Credit. Most patients in your situation choose a 24- or 36-month plan, with monthly payments typically in the $250 to $500 range. Happy to walk you through specifics if helpful.</blockquote>
+
+<hr />
+
+<h2>Why these four partners specifically</h2>
+<p>The four financing partners listed are the four most patient-recognised in U.S. medical aesthetic financing:</p>
+<ul>
+<li><strong>CareCredit</strong> (Synchrony Bank), most widely recognised name in U.S. medical financing across dentistry, dermatology, veterinary, vision. Brand-trust transfer is the value.</li>
+<li><strong>PatientFi</strong>, specifically built for cosmetic surgery, broader credit-tier acceptance than CareCredit, higher procedure-cost ceilings. Strong on the $15K+ procedure tier.</li>
+<li><strong>Cherry</strong>, youngest patient demographic, fastest approval (~60 seconds), no hard credit check. Strong for the under-35 patient segment.</li>
+<li><strong>Alphaeon Credit</strong> (Comenity), specifically positioned for premium aesthetics, longer terms (up to 60 months), promotional 0% APR offers. Strong for $20K+ multi-procedure cases.</li>
+</ul>
+<p>This combination covers the full credit-tier and procedure-cost matrix.</p>
+
+<h2>Legal and compliance flags</h2>
+<ul>
+<li><strong>Florida BME + FDA + FTC + Truth in Lending Act (TILA):</strong> Any "from $X/month" claim requires a representative APR disclosure or a "subject to credit approval" footnote. Both are present in the mockup.</li>
+<li><strong>CareCredit / PatientFi / Cherry / Alphaeon marketing guidelines:</strong> Each partner restricts how their logo may be used. Logo files and use-permission documents are pulled from each partner's provider portal during deployment. No partner logo is used without confirmed active enrolment.</li>
+<li><strong>Pricing claims:</strong> "Procedures from $X" claims must reflect actual practice pricing. The placeholder pricing in this mockup is for layout reference only. Real numbers come from the practice at kickoff.</li>
+</ul>
+
+<hr />
+
+<h2>Part 2 &middot; Deployable schema markup sample</h2>
+
+<h3>What this is</h3>
+<p>This is real, deployable JSON-LD structured data for one page on your site: the Breast Augmentation in Sarasota page.</p>
+<p>Drop the code block at the bottom into the <code>&lt;head&gt;</code> of that page (or load it via tag manager) and Google's AI gains a machine-readable map of: who Dr. Lambiris is, what credentials he holds, what procedure the page is about, what the consultation process looks like, what the FAQ answers are, and where the practice is physically located.</p>
+<p>This is not theoretical. This is the work, ready to ship for one page, as proof.</p>
+
+<h3>What the schema declares to Google's AI</h3>
+<table>
+<thead><tr><th>Schema Type</th><th>What It Tells Google</th></tr></thead>
+<tbody>
+<tr><td>MedicalBusiness</td><td>The practice is a medical practice at this address, with these hours, this phone, this rating</td></tr>
+<tr><td>Physician</td><td>Dr. Lambiris is a board-certified physician with these qualifications, training, and society memberships</td></tr>
+<tr><td>MedicalProcedure</td><td>Breast augmentation is a service this practice provides, here is its description and what it costs</td></tr>
+<tr><td>FAQPage</td><td>Each FAQ on the page is a Q&amp;A pair the AI can quote directly in its answer</td></tr>
+<tr><td>BreadcrumbList</td><td>The page sits inside the /breast/ procedure category</td></tr>
+<tr><td>AggregateRating</td><td>The practice holds a 5.0 rating across this many reviews</td></tr>
+</tbody>
+</table>
+
+<h3>The deployable code</h3>
+
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.westcoastplasticsurgery.com/#practice",
+      "name": "West Coast Plastic Surgery",
+      "alternateName": "West Coast Plastic Surgery, Sarasota FL",
+      "url": "https://www.westcoastplasticsurgery.com",
+      "logo": "https://www.westcoastplasticsurgery.com/[LOGO_URL_VERIFY].png",
+      "image": "https://www.westcoastplasticsurgery.com/[EXTERIOR_PHOTO_VERIFY].jpg",
+      "telephone": "+1-941-366-9818",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2677 S Tamiami Trail, Suite 3",
+        "addressLocality": "Sarasota",
+        "addressRegion": "FL",
+        "postalCode": "34239",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[VERIFY_LAT]",
+        "longitude": "[VERIFY_LON]"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "08:30",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:30",
+          "closes": "14:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "[VERIFY_GBP_REVIEW_COUNT]",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "medicalSpecialty": ["PlasticSurgery", "CosmeticSurgery"],
+      "areaServed": [
+        {"@type": "City", "name": "Sarasota"},
+        {"@type": "City", "name": "Bradenton"},
+        {"@type": "City", "name": "Lakewood Ranch"},
+        {"@type": "City", "name": "Venice"},
+        {"@type": "City", "name": "Siesta Key"}
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://www.westcoastplasticsurgery.com/about-us/dr-lambiris/#physician",
+      "name": "Dr. Brandon Lambiris, MD",
+      "honorificSuffix": "MD",
+      "medicalSpecialty": "PlasticSurgery",
+      "memberOf": [
+        {"@type": "MedicalOrganization", "name": "American Society of Plastic Surgeons (ASPS)"},
+        {"@type": "MedicalOrganization", "name": "The Aesthetic Society"},
+        {"@type": "MedicalOrganization", "name": "Florida Society of Plastic Surgeons (FSPS)"}
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "BoardCertification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "American Board of Plastic Surgery (ABPS)"
+          }
+        }
+      ],
+      "alumniOf": [
+        {"@type": "EducationalOrganization", "name": "Florida State University"},
+        {"@type": "EducationalOrganization", "name": "Florida State University College of Medicine"},
+        {"@type": "MedicalOrganization", "name": "University of Missouri-Columbia Integrated Plastic Surgery Residency"}
+      ],
+      "award": [
+        "SRQ Magazine Top Doctors, November 2024",
+        "Sarasota Magazine Shine On Feature, January 2025",
+        "Alpha Omega Alpha Honor Medical Society"
+      ],
+      "worksFor": {"@id": "https://www.westcoastplasticsurgery.com/#practice"},
+      "description": "Dr. Brandon Lambiris is board-certified by the American Board of Plastic Surgery (ABPS) and practices in Sarasota, Florida. He completed a six-year Integrated Plastic Surgery residency at the University of Missouri-Columbia, serving as Chief Resident in his final year. He inherited the Sarasota practice of plastic surgeon Dr. James Marsh."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Breast Augmentation in Sarasota, FL",
+      "procedureType": "https://schema.org/SurgicalProcedure",
+      "bodyLocation": "Breast",
+      "performer": {"@id": "https://www.westcoastplasticsurgery.com/about-us/dr-lambiris/#physician"},
+      "provider": {"@id": "https://www.westcoastplasticsurgery.com/#practice"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does breast augmentation cost in Sarasota, FL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "[VERIFY_FROM_PAGE: pull the exact answer text already published on the breast-augmentation page]"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. Brandon Lambiris board-certified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Brandon Lambiris is board-certified by the American Board of Plastic Surgery (ABPS), the recognised board for plastic surgery in the United States."
+          }
+        }
+      ]
+    }
+  ]
+}
+&lt;/script&gt;
+</code></pre>
+
+<h3>What needs verification at kickoff</h3>
+<p>The schema is structurally complete and valid. The seven <code>[VERIFY_*]</code> placeholders are values that must be confirmed against the live page or the Google Business Profile before deployment:</p>
+<ol>
+<li>Logo URL on the site</li>
+<li>Exterior practice photo URL</li>
+<li>Lat/lon coordinates (pulled from the Google Business Profile)</li>
+<li>Dr. Lambiris photo URL</li>
+<li>Google Business Profile review count (the real number, not the footer-aggregated 248)</li>
+<li>Breast-aug FAQ answer text (copy/paste from the existing page so the AI quotes the exact published copy)</li>
+<li>Breast-aug price range and recovery timeline as already published on the page</li>
+</ol>
+<p>No fabricated numbers. No invented review counts. No made-up qualifications.</p>
+
+<h3>Validation</h3>
+<p>Before deployment, the code is run through:</p>
+<ul>
+<li>Google's Rich Results Test (validates structural correctness)</li>
+<li>Schema.org Validator (validates the schema vocabulary)</li>
+<li>Manual review against the live page content (validates the values match what is actually published)</li>
+</ul>
+
+<h3>Timeline and scope (proposed)</h3>
+<table>
+<thead><tr><th>Page</th><th>Working Days</th></tr></thead>
+<tbody>
+<tr><td>Breast Augmentation (this sample)</td><td>1 day to verify + deploy</td></tr>
+<tr><td>Mommy Makeover</td><td>1 day</td></tr>
+<tr><td>Tummy Tuck</td><td>1 day</td></tr>
+<tr><td>Rhinoplasty</td><td>1 day</td></tr>
+<tr><td>Facelift</td><td>1 day</td></tr>
+<tr><td>BBL</td><td>1 day</td></tr>
+<tr><td>Homepage + About + GBP cleanup</td><td>2 days</td></tr>
+<tr><td><strong>Total for full procedure tree</strong></td><td><strong>5 to 7 working days</strong></td></tr>
+</tbody>
+</table>
+
+<h3>What this unlocks (when scaled to all procedure pages)</h3>
+<ul>
+<li>AI engines can now cite West Coast Plastic Surgery as a source on procedure-specific questions ("how much does breast aug cost in Sarasota," "who is board-certified for rhinoplasty in Sarasota," "what is the recovery time for tummy tuck in Sarasota")</li>
+<li>Google Knowledge Panel gets the data it needs to reinforce the practice profile</li>
+<li>Rich Results in standard Google Search (star ratings, FAQ accordions, procedure pricing) become eligible to appear in the SERP</li>
+</ul>
+
+<div class="doc-footer">
+<a href="hub-page.html" class="doc-footer-link">Back to Hub</a>
+<div class="doc-meta">AG Consulting &middot; Prepared 2026-05-16 &middot; info@andreicopy.net</div>
+</div>
+
+</article>
+</body>
+</html>
